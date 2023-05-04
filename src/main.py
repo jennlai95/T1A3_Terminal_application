@@ -1,7 +1,14 @@
+# import modules & packages
 from hotel_room import Room
 from hotel_room import room_type
+from user import get_user
 
+# Welcome message
 print ("Welcome to our Hotel booking!")
+
+# making a booking 
+user_info = get_user()
+current_booking = {"user_info": user_info, "room_type": room_type}
 
 def create_menu():
     print("Enter 1 to view user information")
@@ -19,11 +26,11 @@ while user_choice != "5":
     user_choice = create_menu()
     
     if (user_choice == "1"):
-        print("Add user_info")
+        print(user_info)
     elif (user_choice == "2"):
         print(room_type)
     elif (user_choice == "3"):
-        print("current booking")
+        print("current_booking")
     elif (user_choice == "4"):
         print("receipt")
     elif (user_choice == "5"):
@@ -34,4 +41,4 @@ while user_choice != "5":
     input("press enter to continue....")
 
 
-print("Thank you for using the booking app")
+print("Thank you for using the Hotel booking app")

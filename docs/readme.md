@@ -1,3 +1,0 @@
-Usage
-
-Hotel Booking Terminal

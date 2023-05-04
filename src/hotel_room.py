@@ -6,6 +6,6 @@ class Room:
         print(self)
     
  #room_type lust  
-room_type = [('single'), ('double'), ('twin'),('queen')]
+room_type = [('single: $100'), ('double: $150'), ('twin:$200'),('queen:$300')]
     
  
