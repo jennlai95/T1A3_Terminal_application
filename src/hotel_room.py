@@ -21,10 +21,14 @@ def room_choice_menu():
     print("E to Exit to menu")
 
    
-    n = int(input("Please choose the length of your stay: "))
-    except ValueError:
-        print("Please input a number or input 0 if you want to exit")
-    room_choice = ""
+    while True:
+        try:
+            n = int(input("Please choose the length of your stay: "))
+            if n < 0:
+                raise ValueError
+            break
+        except ValueError:
+            print("Please input a positive integer or input 0 if you want to exit")
    
 
     room_choice = input("Please enter the letter of the room of your choice: ")
