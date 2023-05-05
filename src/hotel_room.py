@@ -31,7 +31,8 @@ def room_choice_menu():
             print("Please input a positive integer or input 0 if you want to exit")
    
 
-    room_choice = input("Please enter the letter of the room of your choice: ")
+    class room_choice:
+        input("Please enter the letter of the room of your choice: ")
        
     if room_choice == "A":
         room_price = 100

@@ -2,17 +2,18 @@
 import csv
 from hotel_room import Room
 from hotel_room import room_type
-from hotel_room import room_choice_menu
+from hotel_room import room_choice_menu, room_type, room_choice
 from user import get_user
-from 
+from booking import add_booking
 
 # Welcome message
 print ("Welcome to our Hotel booking!")
 
 # making a booking 
-booking = "booking_records.csv"
+current_booking = "booking_records.csv"
 user_info = get_user()
-current_booking = {"user_info": user_info, "room_type": room_type}
+booking = {"user_info": user_info, "room_choice": room_choice}
+add_booking(booking)
 
 # main menu 
 def create_menu():
@@ -41,10 +42,7 @@ while user_choice != "5":
             confirmation = input("Please confirm if you would like to make this booking? Yes or No: ")
             if confirmation == "Yes":
                 print("Thank you")
-                # Record booking information to CSV file 
-                with open("bookings.csv", "a", newline="") as f:
-                    writer = csv.writer(f)
-                    writer.writerow([user_info, room_choice_menu])
+                print(f"Booking")
             elif confirmation == "No":
               pass
         elif user_input == 'N':
