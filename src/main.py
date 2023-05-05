@@ -1,7 +1,7 @@
 # import modules & packages
 from hotel_room import Room
 from hotel_room import room_type
-from hotel_room import room
+from hotel_room import room_choice_menu
 from user import get_user
 
 # Welcome message
@@ -35,7 +35,7 @@ while user_choice != "5":
         print(room_type)
         user_input = input('Would you like to make a new booking Y or N?: ')
         if user_input == 'Y':
-            print (new_booking)
+            result = room_choice_menu()
         elif user_input == 'N':
             print ("Thank you for browsing! We will take you back to the main menu")
             continue

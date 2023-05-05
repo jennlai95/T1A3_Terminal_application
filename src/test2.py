@@ -1,8 +1,8 @@
 
-print ("Here are the available rooms! Press enter to continue")
 
-def room_choice_menu(n):
-    print("The list of available rooms:")
+
+def room_choice_menu():
+    print ("Here are the available rooms! Press enter to continue")
     print("1. Single room: $100/night")
     print("2. Double room: $150/night")
     print("3. Twin room: $200/night")

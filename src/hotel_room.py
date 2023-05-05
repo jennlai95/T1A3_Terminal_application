@@ -9,10 +9,8 @@ class Room:
  #room_type list  
 room_type = [('single: $100'), ('double: $150'), ('twin:$200'),('queen:$300')]
 
-
-print ("Here are the available rooms! Press enter to continue")
-
-def room_choice_menu(n):
+def room_choice_menu():
+    print ("Here are the available rooms! Press enter to continue")
     print("The list of available rooms:")
     print("1. Single room: $100/night")
     print("2. Double room: $150/night")
@@ -21,7 +19,9 @@ def room_choice_menu(n):
    
 
     room_choice = input("Please enter the room number of your choice: ")
-
+    room_choice = ""
+    n = int(input("Please choose the length of your stay: "))
+    
     if room_choice == "1":
         room_price = 100
         print("Single room chosen at $100 per night")
@@ -42,5 +42,3 @@ def room_choice_menu(n):
     print(f"Total cost for {n} nights: ${total_cost}")
     return room_choice
 
-room_choice = ""
-n = int(input("Please choose the length of your stay: "))
