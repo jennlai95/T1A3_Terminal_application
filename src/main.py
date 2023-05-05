@@ -12,6 +12,7 @@ booking = "booking_records.csv"
 user_info = get_user()
 current_booking = {"user_info": user_info, "room_type": room_type}
 
+# main menu 
 def create_menu():
     print("Enter 1 to view user information")
     print("Enter 2 to view available rooms")
@@ -24,6 +25,7 @@ def create_menu():
 user_choice = ""
 print(user_choice)
 
+# main menu loop and choices
 while user_choice != "5":
     user_choice = create_menu()
     
