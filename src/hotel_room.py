@@ -16,12 +16,14 @@ def room_choice_menu():
     print("B. Double room: $150/night")
     print("C. Twin room: $200/night")
     print("D. Queen: $300/night")
+
+   
+    n = int(input("Please choose the length of your stay: "))
+    room_choice = ""
    
 
     room_choice = input("Please enter the room number of your choice: ")
-    room_choice = ""
-    n = int(input("Please choose the length of your stay: "))
-    
+       
     if room_choice == "A":
         room_price = 100
         print("Single room chosen at $100 per night")
