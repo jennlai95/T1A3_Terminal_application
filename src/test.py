@@ -1,3 +1,12 @@
+today = date.today ()
+    
+def new_booking():
+    print (today) 
+    print("total number of days")
+    choose
+    add (new_booking)
+
+
 # User info and login
 def get_user(self):
     self.name = input("Enter your name: ")

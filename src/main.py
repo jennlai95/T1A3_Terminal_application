@@ -1,12 +1,14 @@
 # import modules & packages
 from hotel_room import Room
 from hotel_room import room_type
+from hotel_room import room
 from user import get_user
 
 # Welcome message
 print ("Welcome to our Hotel booking!")
 
 # making a booking 
+booking = "booking_records.csv"
 user_info = get_user()
 current_booking = {"user_info": user_info, "room_type": room_type}
 
@@ -33,7 +35,7 @@ while user_choice != "5":
         if user_input == 'Y':
             print (new_booking)
         elif user_input == 'N':
-            print ("Thank you for browsing! We hope you have a good day")
+            print ("Thank you for browsing! We will take you back to the main menu")
             continue
         else: 
             print("Invalid input")
