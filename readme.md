@@ -27,7 +27,8 @@ Note: Ensure that your features above allow you to demonstrate your understandin
 
 Consult with your educator to check your features are sufficient .
 
-image.png
+<img width="380" alt="image" src="https://user-images.githubusercontent.com/126547898/236470231-620bb632-c26a-408b-9b20-8b1e171cde34.png">
+
 
 
 # R7 Develop an implementation plan which:
@@ -38,6 +39,12 @@ image.png
 Utilise a suitable project management platform to track this implementation plan.
 
 Provide screenshots/images and/or a reference to an accessible project management platform used to track this implementation plan. 
+
+Day 1: Trello management
+
+![image](https://user-images.githubusercontent.com/126547898/236470482-d6e1828f-83ce-4310-9d80-1bc424264cbf.png)
+
+
 
 
 > Your checklists for each feature should have at least 5 items.
