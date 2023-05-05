@@ -1,4 +1,5 @@
 # import modules & packages
+import csv
 from hotel_room import Room
 from hotel_room import room_type
 from hotel_room import room_choice_menu
@@ -36,6 +37,15 @@ while user_choice != "5":
         user_input = input('Would you like to make a new booking Y or N?: ')
         if user_input == 'Y':
             result = room_choice_menu()
+            confirmation = input("Please confirm if you would like to make this booking? Yes or No: ")
+            if confirmation == "Yes":
+                print("Thank you")
+                # Record booking information to CSV file 
+                with open("bookings.csv", "a", newline="") as f:
+                    writer = csv.writer(f)
+                    writer.writerow([user_info, room_choice_menu])
+            elif confirmation == "No":
+              pass
         elif user_input == 'N':
             print ("Thank you for browsing! We will take you back to the main menu")
             continue

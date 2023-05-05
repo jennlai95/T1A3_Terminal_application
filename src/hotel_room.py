@@ -1,4 +1,6 @@
 import datetime
+import csv
+
 class Room:
     def _init_(self,room_type,price,capacity):
         self.type = room_type
@@ -16,13 +18,16 @@ def room_choice_menu():
     print("B. Double room: $150/night")
     print("C. Twin room: $200/night")
     print("D. Queen: $300/night")
+    print("E to Exit to menu")
 
    
     n = int(input("Please choose the length of your stay: "))
+    except ValueError:
+        print("Please input a number or input 0 if you want to exit")
     room_choice = ""
    
 
-    room_choice = input("Please enter the room number of your choice: ")
+    room_choice = input("Please enter the letter of the room of your choice: ")
        
     if room_choice == "A":
         room_price = 100
@@ -36,11 +41,14 @@ def room_choice_menu():
     elif room_choice == "D":
         room_price = 300
         print("Queen room chosen at $300 per night")
+    elif room_choice == "E":
+        exit ()
     else:
-        print("Invalid room choice")
+        print("Invalid room choice, please enter the Letter A, B, C or D for your choices")
         room_price = 0
 
     total_cost = n * room_price
     print(f"Total cost for {n} nights: ${total_cost}")
     return room_choice
 
+ 
