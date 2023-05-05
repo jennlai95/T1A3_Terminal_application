@@ -13,8 +13,8 @@ current_booking = {"user_info": user_info, "room_type": room_type}
 def create_menu():
     print("Enter 1 to view user information")
     print("Enter 2 to view available rooms")
-    print("Enter 3 to view current booking")
-    print("Enter 4 to view receipt")
+    print("Enter 3 to make a new booking")
+    print("Enter 4 to view past booking")
     print("Enter 5 to exit")
     choice = input("Enter your selection:")
     return choice
@@ -29,8 +29,16 @@ while user_choice != "5":
         print(user_info)
     elif (user_choice == "2"):
         print(room_type)
+        user_input = input('Would you like to make a new booking Y or N?: ')
+        if user_input == 'Y':
+            print (new_booking)
+        elif user_input == 'N':
+            print ("Thank you for browsing! We hope you have a good day")
+            continue
+        else: 
+            print("Invalid input")
     elif (user_choice == "3"):
-        print("current_booking")
+        print(user_info, room_type)
     elif (user_choice == "4"):
         print("receipt")
     elif (user_choice == "5"):

@@ -5,7 +5,7 @@ class Room:
         self.capacity = capacity
         print(self)
     
- #room_type lust  
+ #room_type list  
 room_type = [('single: $100'), ('double: $150'), ('twin:$200'),('queen:$300')]
     
  
