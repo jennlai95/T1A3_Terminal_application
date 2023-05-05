@@ -4,9 +4,16 @@
 
 # R4 Provide a link to your source control repository
 
+Github: https://github.com/jennlai95/T1A3_Terminal_application
+Trello: https://trello.com/b/kLus5Ies/terminal-application-hotel-booking-t1a3
+
+
 # Identify any code style guide or styling conventions that the application will adhere to.
 
 Reference the chosen style guide appropriately.
+
+Using the PEP8 style guide to write the code
+Python enhancement proposals. (n.d.). Retrieved May 3, 2023, from https://peps.python.org/pep-0008/
 
 
 # R6 Develop a list of features that will be included in the application. It must include:
@@ -19,6 +26,8 @@ Note: Ensure that your features above allow you to demonstrate your understandin
 - error handling
 
 Consult with your educator to check your features are sufficient .
+
+image.png
 
 
 # R7 Develop an implementation plan which:
