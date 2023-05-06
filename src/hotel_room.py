@@ -59,8 +59,8 @@ def room_choice_menu():
 
     with open("bookings.csv", mode="a", newline="") as csvfile:
          writer = csv.writer(csvfile)
-         writer.writerow({'User info': get_user(), 'Room Choice': room_choice, 'Number of Nights': n, 'Total Cost': total_cost})
-
+         #  Recording the booking to CSV
+         writer.writerow([get_user(),room_choice,total_cost,n])
     return room_choice, total_cost,n 
      
 

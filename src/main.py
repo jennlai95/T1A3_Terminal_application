@@ -1,15 +1,16 @@
 # import modules & packages
 import csv
+from venv import colored
 from hotel_room import room_choice_menu, room_type
 from user import get_user
-
+from booking import display_bookings
 
 # Welcome message
 print ("Welcome to our Hotel booking!")
 
 # making a booking 
 current_booking = "booking_records.csv"
-user_info = get_user()
+user_info = get_user
 room_choice = room_choice_menu
 booking = {"user_info": user_info, "room_choice": room_choice}
 
@@ -48,15 +49,16 @@ while user_choice != "5":
         result= room_choice_menu()
         confirmation = input("Please confirm if you would like to make this booking? Yes or No: ")
         if confirmation == "Yes":
-                print("Thank you")
-                print(f"You have chosen the room {room_choice} for ")
+                print("Thank you for booking with us")
+                print(f"You have chosen the room for ")
         elif confirmation == "No":
               pass
         elif user_input == 'N':
             print ("Thank you for browsing! We will take you back to the main menu")
             continue
     elif (user_choice == "4"):
-        print("receipt")
+        print("previous booking")
+        display_bookings()
     elif (user_choice == "5"):
         continue
     else: 
