@@ -24,6 +24,6 @@ def add_booking(booking):
         writer = csv.writer(f)
         writer.writerow(booking["user_info"]["name"]),
         booking["user_info"]["email"],
-        booking["room_info"]["room_choice"],
+        booking["room_info"]["room_choice"]
 
 

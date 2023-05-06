@@ -1,5 +1,6 @@
 import datetime
 import csv
+from user import get_user
 
 # class Room:
 #     def _init_(self,room_type,price,capacity):
@@ -10,6 +11,7 @@ import csv
     
  #room_type list  
 room_type = [('single: $100'), ('double: $150'), ('twin:$200'),('queen:$300')]
+
 
 def room_choice_menu():
     print ("Here are the available rooms! Press enter to continue")
@@ -53,6 +55,19 @@ def room_choice_menu():
 
     total_cost = n * room_price
     print(f"Total cost for {n} nights: ${total_cost}")
+    
+    # record output to CSV 
+    with open('booking.csv', mode='a', newline='') as csv_file:
+        fieldnames = ['user_info','Room Choice', 'Number of Nights', 'Total Cost']
+        writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+
+        # Check if the CSV file is empty
+        csv_file.seek(0)
+        first_char = csv_file.read(1)
+        if not first_char:
+            writer.writeheader()
+
+        writer.writerow({'User info': get_user, 'Room Choice': room_choice, 'Number of Nights': n, 'Total Cost': total_cost})
     return room_choice
 
  

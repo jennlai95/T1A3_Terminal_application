@@ -1,9 +1,8 @@
 # import modules & packages
 import csv
-from hotel_room import room_type
 from hotel_room import room_choice_menu, room_type
 from user import get_user
-from booking import add_booking
+
 
 # Welcome message
 print ("Welcome to our Hotel booking!")
@@ -12,7 +11,7 @@ print ("Welcome to our Hotel booking!")
 current_booking = "booking_records.csv"
 user_info = get_user()
 booking = {"user_info": user_info, "room_choice": room_choice_menu}
-add_booking(booking)
+
 
 # main menu 
 def create_menu():
@@ -26,6 +25,7 @@ def create_menu():
 
 user_choice = ""
 print(user_choice)
+
 
 # main menu loop and choices
 while user_choice != "5":
@@ -48,7 +48,9 @@ while user_choice != "5":
         confirmation = input("Please confirm if you would like to make this booking? Yes or No: ")
         if confirmation == "Yes":
                 print("Thank you")
-                print(f"Booking")
+                # calling the function
+                chosen_room = room_choice_menu()
+                print(f"You have chosen the room {chosen_room}")
         elif confirmation == "No":
               pass
         elif user_input == 'N':
