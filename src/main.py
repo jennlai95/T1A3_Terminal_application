@@ -10,7 +10,8 @@ print ("Welcome to our Hotel booking!")
 # making a booking 
 current_booking = "booking_records.csv"
 user_info = get_user()
-booking = {"user_info": user_info, "room_choice": room_choice_menu}
+room_choice = room_choice_menu
+booking = {"user_info": user_info, "room_choice": room_choice}
 
 
 # main menu 
@@ -48,9 +49,7 @@ while user_choice != "5":
         confirmation = input("Please confirm if you would like to make this booking? Yes or No: ")
         if confirmation == "Yes":
                 print("Thank you")
-                # calling the function
-                chosen_room = room_choice_menu()
-                print(f"You have chosen the room {chosen_room}")
+                print(f"You have chosen the room {room_choice} for ")
         elif confirmation == "No":
               pass
         elif user_input == 'N':
