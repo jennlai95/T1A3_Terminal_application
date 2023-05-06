@@ -1,12 +1,12 @@
 import datetime
 import csv
 
-class Room:
-    def _init_(self,room_type,price,capacity):
-        self.type = room_type
-        self.price = price
-        self.capacity = capacity
-        print(self)
+# class Room:
+#     def _init_(self,room_type,price,capacity):
+#         self.type = room_type
+#         self.price = price
+#         self.capacity = capacity
+#         print(self)
     
  #room_type list  
 room_type = [('single: $100'), ('double: $150'), ('twin:$200'),('queen:$300')]
@@ -31,8 +31,7 @@ def room_choice_menu():
             print("Please input a positive integer or input 0 if you want to exit")
    
 
-    class room_choice:
-        input("Please enter the letter of the room of your choice: ")
+    room_choice = input("Please enter the letter of the room of your choice: ")
        
     if room_choice == "A":
         room_price = 100

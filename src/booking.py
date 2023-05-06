@@ -15,7 +15,7 @@
 #     return {"name": self.name, "email": self.email, "phone" : self.phone}
 
 import csv 
-from hotel_room import room_choice_menu
+from hotel_room import room_choice_menu, room_type, room_choice
 
 BOOKING_FILES = "booking.csv"
 
