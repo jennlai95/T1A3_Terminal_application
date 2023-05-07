@@ -18,7 +18,7 @@ booking = {"user_info": user_info, "room_choice": room_choice}
 
 # main menu 
 def create_menu():
-    print("Enter 1 to view user information")
+    print("Enter 1 to add your user information")
     print("Enter 2 to view available rooms")
     print("Enter 3 to make a new booking")
     print("Enter 4 to view past booking")
@@ -38,19 +38,19 @@ while user_choice != "5":
         print(user_info())
     elif (user_choice == "2"):
         print(room_type)
-        user_input = input('Would you like to make a new booking Y or N?: ')
+        user_input = input(style.bold('Would you like to make a new booking Y or N?: '))
         if user_input == 'Y':
             user_choice == "3"
         elif user_input == 'N':
             print (style.bold("Thank you for browsing! We will take you back to the main menu"))
             continue
         else: 
-            print("Invalid input")
+            print(f"{fg('red')}Invalid input, returning to main menu{attr('reset')}")
     elif (user_choice == "3"):
         result= room_choice_menu()
         confirmation = input("Please confirm if you would like to make this booking? Yes or No: ")
         if confirmation == "Yes":
-                print("Thank you for booking with us")          
+                print(style.bold("Thank you for booking with us"))         
         elif confirmation == "No":
               pass
         elif user_input == 'N':
@@ -70,8 +70,8 @@ while user_choice != "5":
     elif (user_choice == "5"):
         continue
     else: 
-        print("Invalid input")
-    
+       print(f"{fg('red')}Invalid input{attr('reset')}")
+       
     input("press enter to continue....")
 
 

@@ -10,12 +10,14 @@ from user import get_user
 #         print(self)
     
  #room_type list  
-room_type = [('single: $100/night'), ('double: $150/night'), ('twin:$200/night'),('queen:$300/night')]
+room_type = [('A. Single room: $100/night'), ('B. Double: $150/night'), ('C. Twin:$200/night'),('D. Queen:$300/night')]
+
+# Get the current date
+current_date = datetime.datetime.now().strftime("%Y-%m-%d")
 
 # menu to for user to choose a room and book
 def room_choice_menu():
     print ("Here are the available rooms!")
-    print("The list of available rooms:")
     print("A. Single room: $100/night")
     print("B. Double room: $150/night")
     print("C. Twin room: $200/night")
@@ -60,8 +62,8 @@ def room_choice_menu():
     with open("bookings.csv", mode="a", newline="") as csvfile:
          writer = csv.writer(csvfile)
          #  Recording the booking to CSV
-         writer.writerow([get_user(),room_choice,total_cost,n])
-    return room_choice, total_cost,n 
+         writer.writerow([get_user(),room_choice,total_cost,n,current_date])
+    return room_choice, total_cost,n,current_date
      
 
 # # Get user's room choice

@@ -7,7 +7,7 @@ def get_user():
     while True: 
         try:
             phone = int(input("Enter your phone number here: "))
-            continue
+            break
         except ValueError:
             print("Invalid input. Please enter phone number")
     user_data = {"name": name, "email": email, "phone" : phone}
