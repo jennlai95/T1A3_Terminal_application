@@ -29,8 +29,8 @@ def display_bookings():
             print("Total Cost:", row[2])
             print("Number of Nights:", row[3])
             print("----------------------------")
-            
-
+ 
+ 
 # def add_booking(booking):
 #     with open(BOOKING_FILES,"a",) as f:
 #         writer = csv.writer(f)

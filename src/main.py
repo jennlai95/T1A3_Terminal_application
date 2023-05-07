@@ -1,12 +1,13 @@
 # import modules & packages
 import csv
-from venv import colored
+import style
+from colored import fg,bg, attr
 from hotel_room import room_choice_menu, room_type
 from user import get_user
 from booking import display_bookings
 
 # Welcome message
-print ("Welcome to our Hotel booking!")
+print(f"{fg('blue')} {bg('yellow')}Welcome to Hotel booking {attr('reset')}")
 
 # making a booking 
 current_booking = "booking_records.csv"
@@ -27,21 +28,21 @@ def create_menu():
 
 user_choice = ""
 print(user_choice)
-
+file_name = "bookings.csv"
 
 # main menu loop and choices
 while user_choice != "5":
     user_choice = create_menu()
     
     if (user_choice == "1"):
-        print(user_info)
+        print(user_info())
     elif (user_choice == "2"):
         print(room_type)
         user_input = input('Would you like to make a new booking Y or N?: ')
         if user_input == 'Y':
             user_choice == "3"
         elif user_input == 'N':
-            print ("Thank you for browsing! We will take you back to the main menu")
+            print (style.bold("Thank you for browsing! We will take you back to the main menu"))
             continue
         else: 
             print("Invalid input")
@@ -58,7 +59,15 @@ while user_choice != "5":
             continue
     elif (user_choice == "4"):
         print("previous booking")
-        display_bookings()
+        # check if bookings.csv exists
+        try:
+            display_bookings()
+        # if it exists then all is fine
+        except FileNotFoundError as e:
+            booking_file = open(file_name,"w")
+            booking_file.write ("Booking records")
+            booking_file.close()
+            print ("In except block")           
     elif (user_choice == "5"):
         continue
     else: 

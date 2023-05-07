@@ -12,9 +12,9 @@ from user import get_user
  #room_type list  
 room_type = [('single: $100/night'), ('double: $150/night'), ('twin:$200/night'),('queen:$300/night')]
 
-
+# menu to for user to choose a room and book
 def room_choice_menu():
-    print ("Here are the available rooms! Press enter to continue")
+    print ("Here are the available rooms!")
     print("The list of available rooms:")
     print("A. Single room: $100/night")
     print("B. Double room: $150/night")
