@@ -50,15 +50,14 @@ while user_choice != "5":
         result= room_choice_menu()
         confirmation = input("Please confirm if you would like to make this booking? Yes or No: ")
         if confirmation == "Yes":
-                print("Thank you for booking with us")
-                print(f"You have chosen the room for ")
+                print("Thank you for booking with us")          
         elif confirmation == "No":
               pass
         elif user_input == 'N':
-            print ("Thank you for browsing! We will take you back to the main menu")
+            print (style.italic("Thank you for browsing! We will take you back to the main menu"))
             continue
     elif (user_choice == "4"):
-        print("previous booking")
+        print("Previous booking records")
         # check if bookings.csv exists
         try:
             display_bookings()
@@ -76,4 +75,4 @@ while user_choice != "5":
     input("press enter to continue....")
 
 
-print("Thank you for using the Hotel booking app")
+print(style.bold (style.italic("Thank you for using the Hotel booking app")))

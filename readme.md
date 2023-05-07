@@ -27,6 +27,30 @@ Note: Ensure that your features above allow you to demonstrate your understandin
 
 Consult with your educator to check your features are sufficient .
 
+# About 
+
+This is a hotel booking system application that allows clients/users to view available rooms and make a booking. It also lets users check for previous bookings
+
+#features
+## Menu 
+The first featue is the main menu that displays all the available features and functions of the program. This allows them to select their choices or to exit the program
+Below is the discord discussion for this application.
+
+## View and enter current user
+This inputs the current user so it can be saved
+
+## View available rooms and proces 
+This allows users to view the current available rooms and prices, it will also prompt the users if they want to make a booking or if they want to continue browsing
+
+## Booking 
+This allows the users to make a booking and choose the length of their stay 
+
+## Booking records
+This provides a list of the previously made bookings and the user who made the booking.
+
+## Exit 
+
+
 <img width="380" alt="image" src="https://user-images.githubusercontent.com/126547898/236470231-620bb632-c26a-408b-9b20-8b1e171cde34.png">
 
 
@@ -60,12 +84,29 @@ any system/hardware requirements
 
 how to use any command line arguments made for the application -->
 
-Usage
+## Usage
+This program is best run on VSCODE on Windows which can be installed from here : https://code.visualstudio.com/download
 
-to use this you will need to have python3 installed 
+### Python 
+
+You can install the Python extension on VSCODE by going to Visual studio Marketplace. To use this program you will need to have python3 installed : https://code.visualstudio.com/docs/python/python-tutorial
+
+You can check the python version by going to Terminal and typing: 
+python3 -- version
 
 
 Hotel Booking Terminal
+
+### Install Application 
+To install this application, you will need to clone or download this repo. 
+
+*Downloading 
+To download a GitHub repository: 
+1. Navigate to the main page of the repository:  https://github.com/jennlai95/T1A3_Terminal_application
+2. Click on <> Code
+3. Download Zip
+4. Once downloaded, extract the zip folder and open on VSCode 
+
 
 
 SLIDES 
