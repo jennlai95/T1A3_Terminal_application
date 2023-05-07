@@ -1,6 +1,6 @@
 import datetime
 import csv
-from user import get_user
+from user import get_user  
 
 # class Room:
 #     def _init_(self,room_type,price,capacity):
@@ -24,7 +24,7 @@ def room_choice_menu():
     print("D. Queen: $300/night")
     print("E to Exit to menu")
 
-   
+#    prompts user to input length of stay to calculate the total price
     while True:
         try:
             n = int(input("Please choose the length of your stay: "))
@@ -34,7 +34,7 @@ def room_choice_menu():
         except ValueError:
             print("Please input a positive integer or input 0 if you want to exit")
    
-
+# prompts user to choose a room and error handling
     room_choice = input("Please enter the letter of the room of your choice: ")
        
     if room_choice == "A":
@@ -55,7 +55,7 @@ def room_choice_menu():
         print("Invalid room choice, please enter the Letter A, B, C or D for your choices")
         room_price = 0
     
-    
+    # calculate otal cost and records the room booking to CSV
     total_cost = n * room_price
     print(f"Total cost for {n} nights: ${total_cost}")
 

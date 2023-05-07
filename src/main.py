@@ -2,6 +2,7 @@
 import csv
 import style
 from colored import fg,bg, attr
+import datetime
 from hotel_room import room_choice_menu, room_type
 from user import get_user
 from booking import display_bookings
@@ -47,15 +48,18 @@ while user_choice != "5":
         else: 
             print(f"{fg('red')}Invalid input, returning to main menu{attr('reset')}")
     elif (user_choice == "3"):
-        result= room_choice_menu()
-        confirmation = input("Please confirm if you would like to make this booking? Yes or No: ")
-        if confirmation == "Yes":
-                print(style.bold("Thank you for booking with us"))         
-        elif confirmation == "No":
-              pass
-        elif user_input == 'N':
-            print (style.italic("Thank you for browsing! We will take you back to the main menu"))
-            continue
+        try:
+            result= room_choice_menu()
+            confirmation = input("Please confirm if you would like to make this booking? Yes or No: ")
+            if confirmation == "Yes":
+                    print(style.bold("Thank you for booking with us"))         
+            elif confirmation == "No":
+                pass
+            elif user_input == 'N':
+                print (style.italic("Thank you for browsing! We will take you back to the main menu"))
+                continue
+        except Exception as e:
+            print("An error occurred: ", e)
     elif (user_choice == "4"):
         print("Previous booking records")
         # check if bookings.csv exists

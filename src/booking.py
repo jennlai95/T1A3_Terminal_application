@@ -1,5 +1,6 @@
 from user import get_user
 import csv 
+import datetime
 
 
 BOOKING_FILES = "bookings.csv"
@@ -13,6 +14,7 @@ def display_bookings():
             print("Room Choice:", row[1])
             print("Total Cost:", row[2])
             print("Number of Nights:", row[3])
+            print("Booking date:", row[4])
             print("----------------------------")
  
  

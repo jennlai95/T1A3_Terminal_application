@@ -18,4 +18,4 @@ def get_user():
     # phone = input("Enter your phone number here: ")
 
     print(user_data)
-get_user
+    return user_data
