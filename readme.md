@@ -112,7 +112,11 @@ To download a GitHub repository:
 2. Click on <> Code
 3. Download Zip
 4. Once downloaded, extract the zip folder and open on VSCode 
-5. Once opened you can 
+5. Once opened you can run the run.sh file in bash terminal
+    Select view > New terminal and from there choose bash
+    in bash type ./run.sh to run the program, wait for the program to install the necesary packages and you're good to go!
+
+Alternatively you can double click the run.sh file to run the program from the downloaded folder. 
 
 ![Alt text](docs/github.png)
 
@@ -150,6 +154,8 @@ Each test should:
 
 Tested the application using Pytest and Monkeypatch to create a mock function to assert the results. This is in test_user.py
 
+Used unittest to assert the expect result for main menu when choosing to exit (choosing choice 5)
+
 
 # R16 	Utilise source control throughout the development of the application by:
 - making regular commits (at least 20 commits) with a commit message that summarises the changes
@@ -158,3 +164,4 @@ Tested the application using Pytest and Monkeypatch to create a mock function to
 # R17 Utilise developer tools to facilitate the execution of the application:
 For example,
 - writing a script which turns the application into an executable
+

@@ -18,12 +18,3 @@ def display_bookings():
             print("Booking date:", row[4])
             print("----------------------------")
  
- 
-# def add_booking(booking):
-#     with open(BOOKING_FILES,"a",) as f:
-#         writer = csv.writer(f)
-#         writer.writerow(booking["user_info"]["name"]),
-#         booking["user_info"]["email"],
-#         booking["room_info"]["room_choice"],
-
-

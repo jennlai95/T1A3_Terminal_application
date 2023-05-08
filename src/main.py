@@ -42,7 +42,9 @@ while user_choice != "5":
         print(room_type)
         user_input = input(style.bold('Would you like to make a new booking Y or N?: '))
         if user_input == 'Y':
-            user_choice == "3"
+            user_choice = "3"
+            print (style.bold("Thank you! Please select choice 3"))
+            continue
         elif user_input == 'N':
             print (style.bold("Thank you for browsing! We will take you back to the main menu"))
             continue
@@ -62,6 +64,7 @@ while user_choice != "5":
                 continue
         except Exception as e:
             print("An error occurred: ", e)
+            
     elif (user_choice == "4"):
         print("Previous booking records")
         # check if bookings.csv exists
