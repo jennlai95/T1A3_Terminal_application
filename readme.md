@@ -108,7 +108,6 @@ Alternatively you can double click the run.sh file to run the program from the d
 ![Alt text](docs/github.png)
 
 
-SLIDES 
 
 <!-- R9	An overview of your Terminal application	The main features and overall structure of your app
 R10	An overview of your code	An explanation of the important parts of your code, including any crucial application logic -->
@@ -133,10 +132,10 @@ R10	An overview of your code	An explanation of the important parts of your code,
 Internal and external packages used are
 - csv
 - style
--colored
--pytest 
--unittest
--datetime
+- colored
+- pytest 
+- unittest
+- datetime
 
 # R15 Design TWO tests which check that the application is running as expected.
 
