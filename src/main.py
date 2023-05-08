@@ -55,7 +55,8 @@ while user_choice != "5":
             if confirmation == "Yes":
                     print(style.bold("Thank you for booking with us"))         
             elif confirmation == "No":
-                pass
+                print (style.italic("Thank you for browsing! We will take you back to the main menu"))
+                continue
             elif user_input == 'N':
                 print (style.italic("Thank you for browsing! We will take you back to the main menu"))
                 continue
@@ -75,7 +76,7 @@ while user_choice != "5":
     elif (user_choice == "5"):
         continue
     else: 
-       print(f"{fg('red')}Invalid input{attr('reset')}")
+       print(f"{fg('red')}Invalid input, Try again{attr('reset')}")
        
     input("press enter to continue....")
 

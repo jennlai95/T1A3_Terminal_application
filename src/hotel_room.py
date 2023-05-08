@@ -1,5 +1,7 @@
 import datetime
 import csv
+import style
+from colored import fg,bg,attr
 from user import get_user  
 
 # class Room:
@@ -28,43 +30,51 @@ def room_choice_menu():
     while True:
         try:
             n = int(input("Please choose the length of your stay: "))
+            if n == 0:
+                print ("returning to main menu")
+                
             if n < 0:
                 raise ValueError
             break
         except ValueError:
-            print("Please input a positive integer or input 0 if you want to exit")
+            print(f"{fg('red')}Please input a positive integer or input 0 if you want to exit{attr('reset')}")
    
 # prompts user to choose a room and error handling
-    room_choice = input("Please enter the letter of the room of your choice: ")
-       
-    if room_choice == "A":
-        room_price = 100
-        print("Single room chosen at $100 per night")
-    elif room_choice == "B":
-        room_price = 150
-        print("Double room chosen at $150 per night")
-    elif room_choice == "C":
-        room_price = 200
-        print("Twin room chosen at $200 per night")
-    elif room_choice == "D":
-        room_price = 300
-        print("Queen room chosen at $300 per night")
-    elif room_choice == "E":
-        exit ()
-    else:
-        print("Invalid room choice, please enter the Letter A, B, C or D for your choices")
-        room_price = 0
+    while True:
+        try:
+            room_choice = input("Please enter the letter of the room of your choice: ")
+            
+            if room_choice == "A":
+                room_price = 100
+                print("Single room chosen at $100 per night")
+            elif room_choice == "B":
+                room_price = 150
+                print("Double room chosen at $150 per night")
+            elif room_choice == "C":
+                room_price = 200
+                print("Twin room chosen at $200 per night")
+            elif room_choice == "D":
+                room_price = 300
+                print("Queen room chosen at $300 per night")
+            elif room_choice == "E":
+                exit ()
+            else:
+                raise ValueError
+        except ValueError:
+            print(f"{fg('red')}Invalid room choice, please enter the Letter A, B, C or D for your choices{attr('reset')}")
+            room_price = 0
     
-    # calculate total cost and records the room booking to CSV
-    total_cost = n * room_price
-    print(f"Total cost for {n} nights: ${total_cost}")
+        # calculate total cost and records the room booking to CSV
+        total_cost = n * room_price
+        print(current_date)
+        print(style.bold(f"Total cost for {n} nights: ${total_cost}"))
 
-    with open("bookings.csv", mode="a", newline="") as csvfile:
-         writer = csv.writer(csvfile)
-         #  Recording the booking to CSV
-         writer.writerow([get_user(),room_choice,total_cost,n,current_date])
-    return room_choice, total_cost,n,current_date
-     
+        with open("bookings.csv", mode="a", newline="") as csvfile:
+            writer = csv.writer(csvfile)
+            #  Recording the booking to CSV
+            writer.writerow([get_user(),room_choice,total_cost,n,current_date])
+        return room_choice, total_cost,n,current_date
+        
 
 
  

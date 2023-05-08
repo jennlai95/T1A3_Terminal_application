@@ -9,8 +9,10 @@ def sample_csv():
         ["Cat", "C","200", "5"],
         ["Dog", "D","250", "6"]
     ]
+    
+    
 from booking import display_bookings
 # assertion
 def test_display_bookings():
-    excpected_output = 
-    assert excpected_output == capture_output
+    expected_output = 
+    assert expected_output == capture_output
