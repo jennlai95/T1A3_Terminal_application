@@ -10,7 +10,7 @@ from booking import display_bookings
 # Welcome message
 print(f"{fg('blue')} {bg('yellow')}Welcome to Hotel booking {attr('reset')}")
 
-# making a booking 
+# making a booking defined the following 
 current_booking = "booking_records.csv"
 user_info = get_user
 room_choice = room_choice_menu
@@ -27,6 +27,7 @@ def create_menu():
     choice = input("Enter your selection:")
     return choice
 
+# define user choice and file name
 user_choice = ""
 print(user_choice)
 file_name = "bookings.csv"
@@ -78,5 +79,5 @@ while user_choice != "5":
        
     input("press enter to continue....")
 
-
+# print exit message
 print(style.bold (style.italic("Thank you for using the Hotel booking app")))

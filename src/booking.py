@@ -2,9 +2,10 @@ from user import get_user
 import csv 
 import datetime
 
-
+# defined booking files
 BOOKING_FILES = "bookings.csv"
 
+# defined display bookings menu
 def display_bookings():
     with open("bookings.csv", mode="r") as csvfile:
         reader = csv.reader(csvfile)

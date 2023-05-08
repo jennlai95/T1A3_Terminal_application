@@ -40,7 +40,7 @@ Below is the discord discussion for this application.
 ## View and enter current user
 This inputs the current user so it can be saved
 
-## View available rooms and proces 
+## View available rooms and process 
 This allows users to view the current available rooms and prices, it will also prompt the users if they want to make a booking or if they want to continue browsing
 
 ## Booking 

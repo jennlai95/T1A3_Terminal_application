@@ -9,7 +9,7 @@ from user import get_user
 #         self.capacity = capacity
 #         print(self)
     
- #room_type list  
+ #define room_type list  
 room_type = [('A. Single room: $100/night'), ('B. Double: $150/night'), ('C. Twin:$200/night'),('D. Queen:$300/night')]
 
 # Get the current date
@@ -55,7 +55,7 @@ def room_choice_menu():
         print("Invalid room choice, please enter the Letter A, B, C or D for your choices")
         room_price = 0
     
-    # calculate otal cost and records the room booking to CSV
+    # calculate total cost and records the room booking to CSV
     total_cost = n * room_price
     print(f"Total cost for {n} nights: ${total_cost}")
 
@@ -65,9 +65,6 @@ def room_choice_menu():
          writer.writerow([get_user(),room_choice,total_cost,n,current_date])
     return room_choice, total_cost,n,current_date
      
-
-# # Get user's room choice
-# room_choice = room_choice_menu()
 
 
  
