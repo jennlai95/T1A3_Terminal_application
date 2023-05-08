@@ -98,8 +98,10 @@ To download a GitHub repository:
 1. Navigate to the main page of the repository:  https://github.com/jennlai95/T1A3_Terminal_application
 2. Click on <> Code
 3. Download Zip
-4. Once downloaded, extract the zip folder and open on VSCode 
-5. Once opened you can run the run.sh file in bash terminal
+4. Once downloaded, extract the zip folder and open the entire folder on VSCode 
+5. Once opened go to the file path and make sure you are in /src
+   if you opened the T1A3 folder you can enter cd src in the terminal to move to src folder
+6. From here you can run the run.sh file in bash terminal
     Select view > New terminal and from there choose bash
     in bash type ./run.sh to run the program, wait for the program to install the necesary packages and you're good to go!
 
