@@ -150,9 +150,10 @@ Each test should:
 Tested the application using Pytest and Monkeypatch to create a mock function to assert the results. This is in test_user.py
 The user test uses a mock input and asserts that if the input is put into the get_user() function it will give the expected result. 
 
-I also used unittest to assert the expect result for main menu when choosing to exit (choosing choice 5). It asserts that when choice 5 is chosen from the main menu then it will exit the program entirely. 
+I also used unittest to assert the expect result for main menu when choosing to exit (choosing choice 5). It asserts that when choice 5 is chosen from the main menu then it will exit the program entirely. As seen below both tests passed
 
 
+![image](https://user-images.githubusercontent.com/126547898/236831919-6789227b-c9ba-4fc4-a2d8-26fd4a63c628.png)
 
 
 # R16 	Utilise source control throughout the development of the application by:
