@@ -24,7 +24,7 @@ def room_choice_menu():
     print("B. Double room: $150/night")
     print("C. Twin room: $200/night")
     print("D. Queen: $300/night")
-    print("E to Exit to menu")
+    print("E to Exit program")
 
 #    prompts user to input length of stay to calculate the total price
     while True:
@@ -57,9 +57,11 @@ def room_choice_menu():
                 room_price = 300
                 print("Queen room chosen at $300 per night")
             elif room_choice == "E":
+                print(style.bold (style.italic("Thank you for using the Hotel booking app")))
                 exit ()
             else:
                 raise ValueError
+            break
         except ValueError:
             print(f"{fg('red')}Invalid room choice, please enter the Letter A, B, C or D for your choices{attr('reset')}")
             room_price = 0

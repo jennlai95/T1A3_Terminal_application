@@ -4,9 +4,9 @@
 
 # R4 Provide a link to your source control repository
 
+Trello: https://trello.com/b/kLus5Ies/terminal-application-hotel-booking-t1a3
 Github: https://github.com/jennlai95/T1A3_Terminal_application
 Presentation video: xx
-Trello: https://trello.com/b/kLus5Ies/terminal-application-hotel-booking-t1a3
 
 
 # Identify any code style guide or styling conventions that the application will adhere to.
@@ -50,6 +50,7 @@ This allows the users to make a booking and choose the length of their stay
 This provides a list of the previously made bookings and the user who made the booking.
 
 ## Exit 
+exits program
 
 
 <img width="380" alt="image" src="https://user-images.githubusercontent.com/126547898/236470231-620bb632-c26a-408b-9b20-8b1e171cde34.png">
@@ -111,8 +112,10 @@ To download a GitHub repository:
 2. Click on <> Code
 3. Download Zip
 4. Once downloaded, extract the zip folder and open on VSCode 
+5. Once opened you can 
 
 ![Alt text](docs/github.png)
+
 
 SLIDES 
 
