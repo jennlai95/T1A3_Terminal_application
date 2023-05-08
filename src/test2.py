@@ -1,8 +1,8 @@
 import pytest 
 import csv 
-
+# doing testing for bookings.py
 @pytest.fixture
-def sample_csv()
+def sample_csv():
     data = [
         ["Apple", "A","100", "3"],
         ["Bob", "B","150", "4"],

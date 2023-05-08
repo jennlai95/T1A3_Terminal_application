@@ -5,6 +5,7 @@
 # R4 Provide a link to your source control repository
 
 Github: https://github.com/jennlai95/T1A3_Terminal_application
+Presentation video: xx
 Trello: https://trello.com/b/kLus5Ies/terminal-application-hotel-booking-t1a3
 
 
@@ -64,11 +65,15 @@ Utilise a suitable project management platform to track this implementation plan
 
 Provide screenshots/images and/or a reference to an accessible project management platform used to track this implementation plan. 
 
+I used trello to outline all the features, what needed to be prioritised and what is done. In the review section I added coding that was done but should be reviewed when there is time so I can add further features. The different coloured labels also indicates the priorities and what section it is in. The orange label for example is important and needs to be completed soon.
+
 Day 1: Trello management
 
 ![image](https://user-images.githubusercontent.com/126547898/236470482-d6e1828f-83ce-4310-9d80-1bc424264cbf.png)
 
 
+Day 3: Trello 
+![Alt text](docs/trello_day3.png)
 
 
 > Your checklists for each feature should have at least 5 items.
@@ -107,7 +112,7 @@ To download a GitHub repository:
 3. Download Zip
 4. Once downloaded, extract the zip folder and open on VSCode 
 
-
+![Alt text](docs/github.png)
 
 SLIDES 
 
@@ -139,6 +144,9 @@ Each test should:
 - provide at least TWO test cases and the expected results for each test case
 
 > An outline of the testing procedure and cases should be included with the source code of the application
+
+Tested the application using Pytest and Monkeypatch to create a mock function to assert the results. This is in test_user.py
+
 
 # R16 	Utilise source control throughout the development of the application by:
 - making regular commits (at least 20 commits) with a commit message that summarises the changes
